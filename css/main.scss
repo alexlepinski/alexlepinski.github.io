@@ -10,7 +10,7 @@ $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
-$footer-height:    70px;
+$footer-height:    20px;
 
 $text-color:       #111;
 $text-color-light: #f2f2f2;
@@ -21,6 +21,8 @@ $brand-color-light:#629dea;
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
+$background-color: #f3f3f3;
+$background-color-dark: darken($background-color, 30%);
 
 $content-width:    1200px;
 $on-palm:          600px;
