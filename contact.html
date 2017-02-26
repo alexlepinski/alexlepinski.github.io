@@ -4,28 +4,26 @@ title: Contact
 permalink: /contact/
 ---
 <div class="contact">
-    <p>
-        <strong>Alex Lepinski</strong><br>
-        Systems Development Engineer<br>
-        CASS - Software Development Group<br>
-        College of Engineering<br>
-        <a href="http://cass.oregonstate.edu/">cass.oregonstate.edu</a>
-    </p>
-</div>
-<div class="contact-links">
-    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-    <br>
-    {% if site.github_username %}
-    <div>
-        {% if site.linkedin_username %}
-            {% include icon-linkedin.html username=site.linkedin_username linktext="" %}
-        {% endif %}
-        {% include icon-github.html username=site.github_username linktext="" %}
+    <div class="section">
+        <div class="body">
+            <strong>Alex Lepinski</strong><br>
+            Systems Development Engineer<br>
+            CASS - Software Development Group<br>
+            College of Engineering<br>
+            <a href="http://cass.oregonstate.edu/">cass.oregonstate.edu</a>
+            <div class="contact-links">
+                <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+                <br>
+                {% if site.github_username %}
+                <div>
+                    {% if site.linkedin_username %}
+                        {% include icon-linkedin.html username=site.linkedin_username linktext="" %}
+                    {% endif %}
+                    {% include icon-github.html username=site.github_username linktext="" %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
     </div>
-    {% endif %}
 </div>
-
-
-
-
 
