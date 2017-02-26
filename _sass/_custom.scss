@@ -15,7 +15,6 @@
 }
 .section .header {
     font-weight: bold;
-    font-size: 18px;
     border-bottom: 1px solid $grey-color-light;
     border-bottom-color: black;
     padding: 0 $spacing-unit/2;
@@ -28,11 +27,17 @@
 
 }
 
+.subsection .header {
+    font-size: $font-size-smaller;
+}
+.subsection .body {
+    font-size: $font-size-smaller;
+}
+
 .about-picture img{
     height: 375px;
     flex-grow: 1;
 }
- 
 
 .about-wrapper .container {
     display: -webkit-flex;
