@@ -13,7 +13,7 @@
 .section .body{
     padding: $spacing-unit/2;
 }
-.section .heading {
+.section .header {
     font-weight: bold;
     font-size: 18px;
     border-bottom: 1px solid $grey-color-light;
@@ -46,8 +46,13 @@
     align-content: flex-start;
 }
 
-.about-pro {
+.about-pro, .about-outside {
     margin-left: $spacing-unit;
     flex-grow: 2;
-    width: 500px;
+    max-width: 500px;
+} 
+.about-outside {
+    margin-left: $spacing-unit;
+    flex-grow: 2;
+    max-width: 800px;
 } 
