@@ -87,7 +87,7 @@
 
 .site-footer {
     border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+    padding: $spacing-unit/2 0;
     position: absolute;
     bottom: 0;
     height: $footer-height;
@@ -113,23 +113,21 @@
    align-content: stretch;
 }
 
-.footer-heading {
-    font-size: 18px;
-}
-
-.page-content {
-    padding: $spacing-unit 0;
-}
 
 .page-heading {
-    font-size: 20px;
+    font-size: $font-size-larger;
 }
 
+.post-content, .post{
+    padding-top: $spacing-unit/2;
+}
 .page-container {
-    min-height: 600px;
+    min-height: 450px;
     background-color: white;
     box-shadow: $box-shadow;
     margin-bottom: $spacing-unit/2;
+    margin-top: $spacing-unit/2;
+    padding: 0 $spacing-unit/2;
     @include media-query($on-palm){
        min-height: 300px;
     }
