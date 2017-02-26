@@ -23,6 +23,8 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 $background-color: #f3f3f3;
 $background-color-dark: darken($background-color, 30%);
+$box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 3px rgba(0,0,0,.2);
+
 
 $content-width:    1200px;
 $on-palm:          600px;

@@ -2,7 +2,8 @@
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
     position: relative;
-    background-color: $background-color-dark;
+    background-color: white;
+    box-shadow: $box-shadow;
 }
 
 .site-title {
@@ -91,6 +92,8 @@
     bottom: 0;
     height: $footer-height;
     width: 100%;
+    background-color: white;
+    box-shadow: $box-shadow;
 }
 
 .footer-col-wrapper {
@@ -122,3 +125,11 @@
     font-size: 20px;
 }
 
+.page-container {
+    min-height: 600px;
+    background-color: white;
+    box-shadow: $box-shadow;
+    @include media-query($on-palm){
+       min-height: 300px;
+    }
+}
