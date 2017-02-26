@@ -1,18 +1,19 @@
 .projects-container {
     .project {
         display: block;
+        background-color: white;
+        box-shadow: 0 0.15em 0.35em 0 rgba(0,0,0,.1);
     }
     .project .body{
-        background-color: transparent;
         margin-bottom: 30px;
         padding: 15px;
     }
     .project .heading {
         font-weight: bold;
         font-size: 18px;
-        border-bottom-style: solid;
-        border-bottom-width: 2px;
+        border-bottom: 1px solid $grey-color-light;
         border-bottom-color: black;
+        padding-left: $spacing-unit/2;
     }
   
 }

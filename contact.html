@@ -12,8 +12,17 @@ permalink: /contact/
         <a href="http://cass.oregonstate.edu/">cass.oregonstate.edu</a>
     </p>
 </div>
-<div class="contact-links"
-    <a href="mailto:#">alexjlepinski@gmail.com</a><br>
+<div class="contact-links">
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    <br>
+    {% if site.github_username %}
+    <div>
+        {% if site.linkedin_username %}
+            {% include icon-linkedin.html username=site.linkedin_username linktext="" %}
+        {% endif %}
+        {% include icon-github.html username=site.github_username linktext="" %}
+    </div>
+    {% endif %}
 </div>
 
 
