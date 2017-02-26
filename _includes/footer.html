@@ -1,7 +1,7 @@
 <footer class="site-footer">
   <div class="container">
     <div>
-      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+       {% include email.html subject=""%}
     </div>
     {% if site.github_username %}
     <div>

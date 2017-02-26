@@ -13,7 +13,7 @@ permalink: /contact/
             <abbr title="Oregon State University">OSU</abbr> - College of Engineering<br>
             <a href="http://cass.oregonstate.edu/">cass.oregonstate.edu</a>
             <div class="contact-links">
-                <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+                {% include email.html subject=""%}
                 <br>
                 {% if site.github_username %}
                 <div>
