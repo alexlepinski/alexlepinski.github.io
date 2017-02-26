@@ -1,21 +1,27 @@
 .projects-container {
-    .project {
-        display: block;
-        background-color: white;
-        box-shadow: 0 0.15em 0.35em 0 rgba(0,0,0,.1);
-    }
-    .project .body{
-        margin-bottom: 30px;
-        padding: 15px;
-    }
-    .project .heading {
-        font-weight: bold;
-        font-size: 18px;
-        border-bottom: 1px solid $grey-color-light;
-        border-bottom-color: black;
-        padding-left: $spacing-unit/2;
-    }
-  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.section {
+    display: block;
+    background-color: white;
+    box-shadow: 0 0.15em 0.35em 0 rgba(0,0,0,.1);
+    margin-bottom: $spacing-unit/2;
+}
+.section .body{
+    padding: $spacing-unit/2;
+}
+.section .heading {
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 1px solid $grey-color-light;
+    border-bottom-color: black;
+    padding: 0 $spacing-unit/2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30px;
 }
 
 .about-picture img{
@@ -37,7 +43,7 @@
 }
 
 .about-pro {
-    padding-left: 20px;
+    margin-left: $spacing-unit;
     flex-grow: 2;
     width: 500px;
 } 
