@@ -6,10 +6,10 @@ permalink: /contact/
 <div class="contact">
     <div class="section">
         <div class="body">
-            <strong>Alex Lepinski</strong><br>
+            <strong>{% include vcf-contact.html name="contact.vcf" description="Alex Lepinski" %}</strong><br>
             Systems Development Engineer<br>
             CASS - Software Development Group<br>
-            College of Engineering<br>
+            OSU - College of Engineering<br>
             <a href="http://cass.oregonstate.edu/">cass.oregonstate.edu</a>
             <div class="contact-links">
                 <a href="mailto:{{ site.email }}">{{ site.email }}</a>
@@ -22,6 +22,7 @@ permalink: /contact/
                     {% include icon-github.html username=site.github_username linktext="" %}
                 </div>
                 {% endif %}
+
             </div>
         </div>
     </div>
