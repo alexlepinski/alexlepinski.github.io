@@ -15,8 +15,7 @@
 }
 .section .header {
     font-weight: bold;
-    border-bottom: 1px solid $grey-color-light;
-    border-bottom-color: black;
+    // border-bottom: 1px solid $grey-color-light;
     padding: 0 $spacing-unit/2;
     display: flex;
     flex-direction: row;
@@ -28,6 +27,7 @@
 }
 
 .subsection .header {
+    border-bottom: 1px solid $grey-color-light;
     font-size: $font-size-smaller;
 }
 .subsection .body {
