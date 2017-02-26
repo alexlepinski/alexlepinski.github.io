@@ -36,10 +36,10 @@
 
 .about-picture img{
     height: 350px;
-    flex-grow: 1;
+    margin-left: $spacing-unit/2;
 }
 
-.about-wrapper .container {
+.about-page .container {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row;
@@ -47,19 +47,17 @@
     -webkit-justify-content: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     align-content: flex-start;
     margin-left: $spacing-unit;
 }
 
+
 .about-pro, .about-outside {
-    margin-left: $spacing-unit;
-    flex-grow: 2;
     max-width: 500px;
+    margin-left: $spacing-unit/2;
 } 
 .about-outside {
-    margin-left: $spacing-unit;
-    flex-grow: 2;
     max-width: 800px;
 } 
 .contact .section {
