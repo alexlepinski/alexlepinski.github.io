@@ -5,27 +5,29 @@ permalink: /contact/
 header: Contact
 ---
 <div class="contact">
-    <div class="section">
-        <div class="body">
-            <strong>{% include vcf-contact.html name="contact.vcf" 
-                label="Save Contact" description="Alex Lepinski" %}</strong><br>
-            Systems Development Engineer<br>
-            <abbr title="Center for Applied Systems and Software">CASS</abbr> - Software Development Group<br>
-            <abbr title="Oregon State University">OSU</abbr> - College of Engineering<br>
-            <a href="http://cass.oregonstate.edu/">cass.oregonstate.edu</a>
-            <div class="contact-links">
-                {% include email.html subject=""%}
-                <br>
-                {% if site.github_username %}
-                <div>
-                    {% if site.linkedin_username %} 
-                        {% include icon-linkedin.html username=site.linkedin_username linktext="" %}
-                    |
+    <div class="container">
+        <div class="section">
+            <div class="body">
+                <strong>{% include vcf-contact.html name="contact.vcf" 
+                    label="Save Contact" description="Alex Lepinski" %}</strong><br>
+                Systems Development Engineer<br>
+                <abbr title="Center for Applied Systems and Software">CASS</abbr> - Software Development Group<br>
+                <abbr title="Oregon State University">OSU</abbr> - College of Engineering<br>
+                <a href="http://cass.oregonstate.edu/">cass.oregonstate.edu</a>
+                <div class="contact-links">
+                    {% include email.html subject=""%}
+                    <br>
+                    {% if site.github_username %}
+                    <div>
+                        {% if site.linkedin_username %} 
+                            {% include icon-linkedin.html username=site.linkedin_username linktext="" %}
+                        |
+                        {% endif %}
+                        {% include icon-github.html username=site.github_username linktext="" %}
+                    </div>
                     {% endif %}
-                    {% include icon-github.html username=site.github_username linktext="" %}
-                </div>
-                {% endif %}
 
+                </div>
             </div>
         </div>
     </div>

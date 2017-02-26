@@ -35,7 +35,7 @@
 }
 
 .about-picture img{
-    height: 375px;
+    height: 350px;
     flex-grow: 1;
 }
 
@@ -70,4 +70,7 @@
 }
 .home-page .section{
     max-width: 600px;
+}
+.home-page > .container{
+    margin-left: $spacing-unit;
 }
