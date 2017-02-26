@@ -5,13 +5,21 @@
     </div>
     {% if site.github_username %}
     <div>
-        {% include icon-github.html username=site.github_username linktext=site.github_username %}
+      {% if site.linkedin_username %}
+      {% include icon-linkedin.html username=site.linkedin_username linktext="" %}
+      {% endif %}
+
+      {% include icon-github.html username=site.github_username linktext=site.github_username %}
     </div>
     {% endif %}
-    <div class="footer-col footer-col-3">
+       
+    <div>
+    </div>
+
+    <div>
         {{ site.description }}
     </div>
-    <div class="footer-col footer-col-4">
+    <div>
       Portland, Oregon
     </div>
   </div>
