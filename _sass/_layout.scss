@@ -87,6 +87,13 @@
             }
         }
 
+        ul {
+            -webkit-flex-direction: column; 
+            flex-direction: column;
+            -webkit-align-items: flex-start;
+            align-items: flex-start;
+        }
+
         .trigger {
             clear: both;
             display: none;
