@@ -7,8 +7,9 @@
     <div>
       {% if site.linkedin_username %}
       {% include icon-linkedin.html username=site.linkedin_username linktext="" %}
+      |
       {% endif %}
-
+        
       {% include icon-github.html username=site.github_username linktext=site.github_username %}
     </div>
     {% endif %}
