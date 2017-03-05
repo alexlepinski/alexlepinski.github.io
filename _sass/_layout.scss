@@ -11,19 +11,24 @@
     font-weight: 300;
     line-height: $navbar-height;
     letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
     color: $grey-color-dark;
-
 }
+.site-header > .wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+} 
 
 .site-nav {
-    float: right;
     line-height: $navbar-height;
     color: $text-color;
-
+    li { padding: 0px; height:100%;}
+    li a { margin: 0px; display: block; width: 100%; height: 100%; }
     .menu-icon {
         display: none;
+        float:right;
     }
     a {
         text-decoration: none;
@@ -38,14 +43,15 @@
         }
     }
     ul {
+            padding: 0;
         list-style: none;
         overflow: hidden; 
         display: -webkit-flex;
         display: flex;
+        justify-content: space-between;
         -webkit-flex-direction: row; 
         flex-direction: row;
-        -webkit-align-items: flex-end;
-        align-items: flex-end;
+        flex-wrap: nowrap;
         li {
             margin-left: $spacing-unit/2;
         }
@@ -66,11 +72,9 @@
         background-color: $background-color;
         border: 1px solid $grey-color-light;
         border-radius: 5px;
-        text-align: right;
 
         .menu-icon {
             display: block;
-            float: right;
             width: 36px;
             height: 26px;
             line-height: 0;
@@ -80,7 +84,6 @@
             > svg {
                 width: 18px;
                 height: 15px;
-
                 path {
                     fill: $grey-color-dark;
                 }
@@ -90,14 +93,13 @@
         ul {
             -webkit-flex-direction: column; 
             flex-direction: column;
-            -webkit-align-items: flex-start;
-            align-items: flex-start;
-            justify-content: flex-start;
-            margin-left: $spacing-unit/2;
-            margin-right: $spacing-unit/2;
+            -webkit-align-items: center;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            margin: 0 $spacing-unit/2;
             li {
-                margin-left: 0;
-
+                margin: 0
             }
         }
 
@@ -159,15 +161,13 @@
 
 .post-content, .post{
     padding-top: $spacing-unit/2;
+    padding-bottom: $spacing-unit/2;
 }
 .page-container {
-    min-height: 350px;
     background-color: white;
     box-shadow: $box-shadow;
     margin-bottom: $spacing-unit/2;
     margin-top: $spacing-unit/2;
     padding: 0 $spacing-unit/2;
-    @include media-query($on-palm){
-       min-height: 200px;
-    }
+  
 }

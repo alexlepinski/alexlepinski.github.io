@@ -11,7 +11,7 @@
     // background: linear-gradient(to bottom, $grey-color,$grey-color 4px, white 4px, white);
 }
 .section .body{
-    padding: $spacing-unit/2;
+    padding: $spacing-unit/3 $spacing-unit/2;
 }
 .section .header {
     font-weight: bold;
@@ -32,8 +32,14 @@
 }
 .subsection .body {
     font-size: $font-size-smaller;
-}
 
+    .subsection .header {
+        border: none;
+    }
+    .subsection .body {
+        padding-top: 0;
+    }
+}
 .about-picture img{
     height: 350px;
     margin-left: $spacing-unit/2;
