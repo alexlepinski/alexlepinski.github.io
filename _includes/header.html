@@ -1,9 +1,19 @@
 <header class="site-header">
 
   <div class="wrapper">
+    <div class="title-container">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
+      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+                 {% if site.github_username %}
+                    <div class="social-media">
+                        {% if site.linkedin_username %} 
+                            {% include icon-linkedin.html username=site.linkedin_username linktext="" %}
+                        |
+                        {% endif %}
+                        {% include icon-github.html username=site.github_username linktext="" %}
+                    </div>
+                    {% endif %}
+    </div>
     <nav class="site-nav">
       <a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">

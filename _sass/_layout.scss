@@ -20,7 +20,17 @@
     align-content: center;
     align-items: center;
 } 
+.title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
 
+    .social-media {
+        margin-left: $spacing-unit/2;
+    }
+}
 .site-nav {
     line-height: $navbar-height;
     color: $text-color;
