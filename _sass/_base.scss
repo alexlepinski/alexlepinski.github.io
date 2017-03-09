@@ -4,7 +4,7 @@ dl, dd, ol, ul, figure {
     margin: 0;
 }
 body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family, 'PT Serif', serif;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
