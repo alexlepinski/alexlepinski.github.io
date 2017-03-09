@@ -53,7 +53,7 @@
         }
     }
     ul {
-            padding: 0;
+        padding: 0;
         list-style: none;
         overflow: hidden; 
         display: -webkit-flex;
@@ -64,6 +64,7 @@
         flex-wrap: nowrap;
         li {
             margin-left: $spacing-unit/2;
+            transition: border-bottom 0.18s;
         }
         li:not(:hover) { 
             padding-bottom: 5px;      
