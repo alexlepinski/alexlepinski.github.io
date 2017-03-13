@@ -1,0 +1,7 @@
+<a href="{{ include.url }}" onclick="ga('send', 'event', 'link', '{{include.title}}')">
+    <span title="{{include.title}}" class="icon icon-open icon-{{include.icon}}">
+        {{ include.linktext }}    
+        {% include /open-iconic/svg/{{include.icon}}.svg %}
+    </span>
+</a>
+ 
