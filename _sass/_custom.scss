@@ -70,7 +70,7 @@
 .contact .section {
     max-width: 375px;
     .body{
-        font-size: $font-size-larger;
+        font-size: $base-font-size;
     }
 }
 .contact {
@@ -81,7 +81,7 @@
     margin-left: $spacing-unit;
     margin-right: $spacing-unit;
     .section .body{
-        font-size: $font-size-larger;
+        font-size: $base-font-size;
     }
 }
 
