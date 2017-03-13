@@ -110,15 +110,23 @@ pre {
     }
 }
 .icon {
-
     > svg {
+        
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: 12px;
+        height: 12px;
         vertical-align: middle;
-
         path {
             fill: $grey-color;
         }
+     
+    }
+    
+}
+
+.icon-linkedin, .icon-github {
+    > svg {
+        width: 16px;
+        height: 16px;
     }
 }
