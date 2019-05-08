@@ -4,31 +4,32 @@ title: Contact
 permalink: /contact/
 header: Contact
 ---
+
 <div class="contact">
-    <div class="container">
-        <div class="section">
-            <div class="body">
-                <strong>{% include vcf-contact.html name="contact.vcf" 
-                    label="Save Contact" description="Alex Lepinski" %}</strong><br>
-                Full Stack Developer<br>
-                Jet Global<br>
-                <a href="https://www.jetglobal.com/">jetglobal.com</a>
-                <div class="contact-links">
-                    {% include email.html subject=""%}
-                    <br>
-                    {% if site.github_username %}
-                    <div>
-                        {% if site.linkedin_username %} 
-                            {% include icon-linkedin.html username=site.linkedin_username linktext="" %}
-                        <span class="link-spacer">|</span>
-                        {% endif %}
-                        {% include icon-github.html username=site.github_username linktext="" %}
-                    </div>
-                    {% endif %}
-
-                </div>
-            </div>
+  <div class="container">
+    <div class="section">
+      <div class="body">
+        <strong
+          >{% include vcf-contact.html name="contact.vcf" label="Save Contact"
+          description="Alex Lepinski" %}</strong
+        ><br />
+        Full Stack Developer<br />
+        Jet Global<br />
+        <a href="https://www.jetglobal.com/">jetglobal.com</a>
+        <div class="contact-links">
+          {% include email.html subject=""%}
+          <br />
+          {% if site.github_username %}
+          <div>
+            {% if site.linkedin_username %} {% include icon-linkedin.html
+            username=site.linkedin_username linktext="" %}
+            <span class="link-spacer">|</span>
+            {% endif %} {% include icon-github.html
+            username=site.github_username linktext="" %}
+          </div>
+          {% endif %}
         </div>
+      </div>
     </div>
+  </div>
 </div>
-
